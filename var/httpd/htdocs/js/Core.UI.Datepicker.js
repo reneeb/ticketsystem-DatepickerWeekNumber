@@ -176,7 +176,7 @@ Core.UI.Datepicker = (function (TargetNS) {
 // ---
 // Perl-Services
 // ---
-            showWeek: Core.Config.Get('DatepickerShowWeek'),
+            showWeek: (Core.Config.Get('DatepickerShowWeek') == 1 ? true : false),
 // ---
             monthNames: [
                 Core.Language.Translate('Jan'),
